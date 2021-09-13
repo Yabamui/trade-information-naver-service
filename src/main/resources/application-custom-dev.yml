@@ -1,0 +1,16 @@
+server:
+  port: 11000
+
+spring:
+  config:
+    activate:
+      on-profile: dev
+
+  jpa:
+    database: mysql
+    properties.hibernate.dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+    properties:
+      hibernate.format_sql: true
